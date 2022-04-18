@@ -86,21 +86,15 @@ export default {
 </script>
 
 <style scoped lang="scss">
-p {
-  margin-bottom: 1rem;
+@import "../assets/style/style.scss";
 
-  a:hover {
-    text-decoration: underline;
-  }
+p {
+  margin-bottom: $base-mb;
 }
 
-a {
-  color: blue;
-
-  &.book {
-    display: block;
-    margin-bottom: 1rem;
-  }
+.book {
+  display: block;
+  margin-bottom: $base-mb;
 }
 
 .status {
@@ -113,13 +107,13 @@ a {
   gap: 0.25rem;
 
   &.reading {
-    color: #c77c41;
-    background-color: #fffbeb;
+    color: $reading-text;
+    background-color: $reading-background;
   }
 
   &.read {
-    color: #4b6c20;
-    background-color: #f7fee7;
+    color: $read-text;
+    background-color: $read-background;
   }
 }
 </style>

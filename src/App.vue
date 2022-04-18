@@ -126,7 +126,7 @@ h3 {
 h1 {
   font-size: 1.875rem;
   line-height: 2.25rem;
-  margin-bottom: 1rem;
+  margin-bottom: $base-mb;
 }
 
 h2 {
@@ -143,6 +143,14 @@ p {
 p {
   line-height: 1.75rem;
   font-weight: 400;
+
+  a {
+    color: blue;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 a {
@@ -201,7 +209,7 @@ section {
 
     a {
       display: block;
-      margin-bottom: 0.85rem;
+      margin-bottom: $base-mb;
     }
   }
 
