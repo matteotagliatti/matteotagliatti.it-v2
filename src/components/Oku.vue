@@ -2,7 +2,8 @@
   <div>
     <p>
       Looking for a new book to read? Check out what I'm reading and the last
-      few I've finished. All pulled from my <a href="#">Oku.club</a> feed.
+      few I've finished. All pulled from my
+      <a href="https://oku.club/user/mattetgl">Oku.club</a> feed.
     </p>
     <!-- Reading -->
     <div>
@@ -64,7 +65,6 @@ export default {
       )
       .then((response) => {
         this.booksReading = response.data.items;
-        console.log(this.booksReading);
       });
 
     /* Get Books Read */
@@ -74,7 +74,6 @@ export default {
       )
       .then((response) => {
         this.booksRead = response.data.items;
-        console.log(this.booksRead);
       });
   },
   computed: {
