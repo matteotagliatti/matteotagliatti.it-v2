@@ -58,12 +58,14 @@
       </div>
     </section>
   </main>
+  <Links />
 </template>
 
 <script>
 import Spotify from "./components/Spotify.vue";
 import Oku from "./components/Oku.vue";
 import Letterboxd from "./components/Letterboxd.vue";
+import Links from "./components/Links.vue";
 
 export default {
   name: "App",
@@ -71,6 +73,7 @@ export default {
     Spotify,
     Oku,
     Letterboxd,
+    Links,
   },
   data() {
     return {
@@ -256,7 +259,7 @@ section {
 }
 
 .activity {
-  padding-bottom: 6rem;
+  padding-bottom: 2rem;
   display: grid;
   grid-template-columns: 40% 60%;
   gap: 4rem;
