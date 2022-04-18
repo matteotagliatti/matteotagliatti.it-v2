@@ -1,5 +1,9 @@
 <template>
   <nav>
+    <a href="mailto:matteotagliatti@gmail.com">
+      <img src="../assets/img/email.svg" alt="Email" />
+    </a>
+    <div class="line"></div>
     <a
       v-for="(link, index) in links"
       :href="link.url"
@@ -17,11 +21,6 @@ export default {
   data() {
     return {
       links: [
-        {
-          name: "Email",
-          icon: require("../assets/img/email.svg"),
-          url: "mailto:matteotagliatti@gmail.com",
-        },
         {
           name: "GitHub",
           icon: require("../assets/img/github.svg"),
@@ -67,6 +66,11 @@ nav {
 
   img {
     width: 100%;
+  }
+
+  .line {
+    height: 20px;
+    border: 1px solid #a1a1aa;
   }
 }
 </style>

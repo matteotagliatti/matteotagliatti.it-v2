@@ -6,7 +6,7 @@
     </p>
     <div class="movies">
       <a
-        v-for="(movie, index) in movies"
+        v-for="(movie, index) in filterMovies"
         :key="index"
         :href="movie.link"
         target="_blank"
@@ -24,7 +24,7 @@ export default {
   name: "LetterboxdSection",
   data() {
     return {
-      movies: null,
+      movies: [],
     };
   },
   mounted() {
@@ -35,6 +35,11 @@ export default {
       .then((response) => {
         this.movies = response.data.items;
       });
+  },
+  computed: {
+    filterMovies() {
+      return this.movies.slice(0, 8);
+    },
   },
 };
 </script>
@@ -54,6 +59,7 @@ p {
 
   img {
     width: 100%;
+    height: 100%;
     border-radius: 0.3rem;
   }
 }

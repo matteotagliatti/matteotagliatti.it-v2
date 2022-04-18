@@ -46,7 +46,7 @@
       </div>
     </section>
     <!-- Spotify -->
-    <section>
+    <section class="no-mw">
       <Spotify />
     </section>
     <!-- Oku & Letterboxd -->
@@ -230,6 +230,10 @@ section {
   max-width: 64rem;
 }
 
+.no-mw {
+  max-width: unset;
+}
+
 .container {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -237,7 +241,7 @@ section {
 }
 
 .works {
-  padding-bottom: 3rem;
+  margin-bottom: 6rem;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 4rem;
@@ -258,7 +262,7 @@ section {
 }
 
 .activity {
-  padding-bottom: 2rem;
+  margin-bottom: 6rem;
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
   gap: 4rem;

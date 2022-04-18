@@ -1,5 +1,10 @@
 <template>
-  <div></div>
+  <div class="spotify">
+    <div class="container">
+      <h2>Music</h2>
+      <div class="grid"></div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -16,4 +21,21 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.spotify {
+  background-color: #f8f9fa;
+  padding: 3rem 2rem;
+  margin-bottom: 6rem;
+
+  .container {
+    max-width: 80rem;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+</style>
