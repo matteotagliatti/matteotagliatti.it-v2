@@ -1,5 +1,5 @@
 <template>
-  <main id="app">
+  <main>
     <!-- Header -->
     <header>
       <div class="container">
@@ -148,7 +148,6 @@ export default {
   background-color: white;
   color: $text-color;
   font-weight: 450;
-  word-wrap: break-word;
 }
 
 h1,
@@ -261,7 +260,7 @@ section {
 .activity {
   padding-bottom: 2rem;
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
   gap: 4rem;
 }
 </style>
