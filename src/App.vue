@@ -21,6 +21,7 @@
               v-for="(work, index) in closedWorks"
               :href="work.link"
               :key="index"
+              target="_blank"
             >
               <h3>{{ work.title }}</h3>
               <small>{{ work.tech }} - {{ work.date }}</small>
@@ -34,6 +35,7 @@
               v-for="(work, index) in closedWorks"
               :href="work.link"
               :key="index"
+              target="_blank"
             >
               <h3>{{ work.title }}</h3>
               <small>{{ work.tech }} - {{ work.date }}</small>
@@ -42,20 +44,26 @@
         </div>
       </div>
     </section>
-    <!--  -->
+    <!-- Spotify -->
     <section>
       <Spotify />
+    </section>
+    <!-- Oku & Letterboxd -->
+    <section class="activity">
+      <Oku />
     </section>
   </main>
 </template>
 
 <script>
 import Spotify from "./components/Spotify.vue";
+import Oku from "./components/Oku.vue";
 
 export default {
   name: "App",
   components: {
     Spotify,
+    Oku,
   },
   data() {
     return {
@@ -142,6 +150,14 @@ a {
   small {
     color: $grey-color;
   }
+
+  &:hover {
+    cursor: pointer;
+
+    h3 {
+      text-decoration: underline;
+    }
+  }
 }
 
 header,
@@ -188,5 +204,10 @@ section {
     border: 1px dashed $text-color;
     border-radius: 0.75rem;
   }
+}
+
+.activity {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 </style>

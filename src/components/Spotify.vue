@@ -3,11 +3,16 @@
 </template>
 
 <script>
+/* import axios from "axios"; */
+
 export default {
   name: "SpotifySection",
-  props: {
-    msg: String,
+  data() {
+    return {
+      spotify: null,
+    };
   },
+  mounted() {},
 };
 </script>
 
