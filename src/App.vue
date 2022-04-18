@@ -30,7 +30,7 @@
           </div>
         </div>
         <div>
-          <h2>GitHub Works</h2>
+          <h2><a href="#" class="link">GitHub</a> Works</h2>
           <div>
             <a
               v-for="(work, index) in openWorks"
@@ -102,10 +102,28 @@ export default {
       ],
       openWorks: [
         {
+          title: "Vue.js Website Template",
+          tech: "Vue.js",
+          date: "2022",
+          link: "https://github.com/matteotagliatti/proj-html-vuejs",
+        },
+        {
           title: "Arcade Games",
           tech: "JS, Jekyll",
           date: "2022",
           link: "https://github.com/matteotagliatti/arcade-games",
+        },
+        {
+          title: "HTML Templates",
+          tech: "HTML, CSS, JS",
+          date: "2019/21",
+          link: "https://github.com/matteotagliatti?tab=repositories&q=template&type=&language=&sort=",
+        },
+        {
+          title: "matteotagliatti.it (Old)",
+          tech: "JS, JQuery, Jekyll",
+          date: "2019",
+          link: "#",
         },
       ],
     };
@@ -146,6 +164,14 @@ h2 {
   font-size: 1.25rem;
   line-height: 1.75rem;
   margin-bottom: 1.35rem;
+
+  a.link {
+    display: inline !important;
+    color: $text-color;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 h3,
