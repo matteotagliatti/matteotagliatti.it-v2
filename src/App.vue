@@ -16,7 +16,7 @@
     <section>
       <div class="container works">
         <div class="dotted">
-          <h2>Closed Source Works</h2>
+          <h2>Client Works</h2>
           <div>
             <a
               v-for="(work, index) in closedWorks"
@@ -30,10 +30,10 @@
           </div>
         </div>
         <div>
-          <h2>Open Source Works</h2>
+          <h2>GitHub Works</h2>
           <div>
             <a
-              v-for="(work, index) in closedWorks"
+              v-for="(work, index) in openWorks"
               :href="work.link"
               :key="index"
               target="_blank"
@@ -51,9 +51,10 @@
     </section>
     <!-- Oku & Letterboxd -->
     <section class="container">
-      <h2>Activity</h2>
+      <h2>Books & Movies</h2>
       <div class="activity">
         <Oku />
+        <Letterboxd />
       </div>
     </section>
   </main>
@@ -62,12 +63,14 @@
 <script>
 import Spotify from "./components/Spotify.vue";
 import Oku from "./components/Oku.vue";
+import Letterboxd from "./components/Letterboxd.vue";
 
 export default {
   name: "App",
   components: {
     Spotify,
     Oku,
+    Letterboxd,
   },
   data() {
     return {
@@ -97,6 +100,14 @@ export default {
           link: "https://magnacartasnc.it/",
         },
       ],
+      openWorks: [
+        {
+          title: "Arcade Games",
+          tech: "JS, Jekyll",
+          date: "2022",
+          link: "https://github.com/matteotagliatti/arcade-games",
+        },
+      ],
     };
   },
 };
@@ -115,6 +126,8 @@ export default {
   font-family: Inter, sans-serif;
   background-color: white;
   color: $text-color;
+  font-weight: 450;
+  word-wrap: break-word;
 }
 
 h1,
@@ -141,15 +154,11 @@ p {
 }
 
 p {
-  line-height: 1.75rem;
-  font-weight: 400;
+  line-height: 1.5rem;
 
   a {
     color: blue;
-
-    &:hover {
-      text-decoration: underline;
-    }
+    text-decoration: underline;
   }
 }
 
@@ -185,6 +194,7 @@ header {
 
   p {
     font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -222,6 +232,7 @@ section {
 .activity {
   padding-bottom: 6rem;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 40% 60%;
+  gap: 4rem;
 }
 </style>
