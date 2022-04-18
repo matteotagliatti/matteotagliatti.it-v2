@@ -5,9 +5,10 @@
       <div class="container">
         <h1>Hey, I'm Matteo</h1>
         <p>
-          A developer with an eye for design from Milan, Italy. Instead of the
-          traditional portfolio site that never gets updated I wanted to make
-          something more personal as a collection of things I enjoy.
+          A web developer with an eye for design from Milan, Italy. Instead of
+          the traditional portfolio site that never gets updated I wanted to
+          make something more simple and personal as a collection of things I
+          enjoy.
         </p>
       </div>
     </header>
@@ -49,8 +50,11 @@
       <Spotify />
     </section>
     <!-- Oku & Letterboxd -->
-    <section class="activity">
-      <Oku />
+    <section class="container">
+      <h2>Activity</h2>
+      <div class="activity">
+        <Oku />
+      </div>
     </section>
   </main>
 </template>
@@ -138,6 +142,7 @@ p {
 
 p {
   line-height: 1.75rem;
+  font-weight: 400;
 }
 
 a {
@@ -207,6 +212,7 @@ section {
 }
 
 .activity {
+  padding-bottom: 6rem;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }

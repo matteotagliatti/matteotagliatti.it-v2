@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h2>Books</h2>
     <p>
       Looking for a new book to read? Check out what I'm reading and the last
       few I've finished. All pulled from my <a href="#">Oku.club</a> feed.
