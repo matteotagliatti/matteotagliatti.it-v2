@@ -56,8 +56,12 @@ nav {
   gap: 1rem;
   padding: 1rem;
   border-radius: 0.5rem;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 12px;
+  transition: box-shadow 0.5s;
   z-index: 2;
+  &:hover {
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 12px;
+  }
 
   a {
     width: 20px;
