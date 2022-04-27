@@ -77,4 +77,10 @@ nav {
     border: 1px solid #a1a1aa;
   }
 }
+
+@include mobile {
+  nav {
+    bottom: 1rem;
+  }
+}
 </style>

@@ -39,4 +39,10 @@ export default {
   grid-template-rows: repeat(2, minmax(0, 1fr));
   gap: 2rem;
 }
+
+@include mobile {
+  .spotify {
+    margin-bottom: 3rem;
+  }
+}
 </style>

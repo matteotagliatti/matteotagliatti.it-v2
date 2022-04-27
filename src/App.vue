@@ -266,4 +266,22 @@ section {
   grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
   gap: 4rem;
 }
+
+@include mobile {
+  header {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .works {
+    margin-bottom: 0;
+    @include grid(1);
+    gap: 0;
+  }
+
+  .activity {
+    @include grid(1);
+    gap: 2rem;
+  }
+}
 </style>
