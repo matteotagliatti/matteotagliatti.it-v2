@@ -3,7 +3,8 @@
     <p>
       Looking for a new book to read? Check out what I'm reading and the last
       few I've finished. All pulled from my
-      <a href="https://oku.club/user/mattetgl">Oku.club</a> feed.
+      <a href="https://oku.club/user/mattetgl" target="_blank">Oku.club</a>
+      feed.
     </p>
     <!-- Reading -->
     <div>
@@ -99,9 +100,7 @@ p {
 .status {
   width: fit-content;
   padding: 0.25rem 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(row, center, center);
   font-size: 0.875rem;
   gap: 0.25rem;
 

@@ -22,6 +22,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../assets/style/style.scss";
+
 .spotify {
   background-color: #f8f9fa;
   padding: 3rem 2rem;
@@ -33,8 +35,7 @@ export default {
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  @include grid(4);
   grid-template-rows: repeat(2, minmax(0, 1fr));
   gap: 2rem;
 }

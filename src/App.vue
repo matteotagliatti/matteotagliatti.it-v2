@@ -157,15 +157,15 @@ h3 {
 }
 
 h1 {
+  margin-bottom: $base-mb;
   font-size: 1.875rem;
   line-height: 2.25rem;
-  margin-bottom: $base-mb;
 }
 
 h2 {
+  margin-bottom: 1.35rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
-  margin-bottom: 1.35rem;
 
   a.link {
     display: inline !important;
@@ -242,8 +242,7 @@ section {
 
 .works {
   margin-bottom: 6rem;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  @include grid(2);
   gap: 4rem;
 
   & > div {

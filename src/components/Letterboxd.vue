@@ -2,7 +2,7 @@
   <div>
     <p>
       Struggling for a film to watch? Here's the latest eight from my
-      <a href="https://letterboxd.com/mattetgl/">Letterboxd</a>
+      <a href="https://letterboxd.com/mattetgl/" target="_blank">Letterboxd</a>
     </p>
     <div class="movies">
       <a
@@ -52,8 +52,7 @@ p {
 }
 
 .movies {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  @include grid(4);
   grid-template-rows: repeat(2, minmax(0, 1fr));
   gap: 0.5rem;
 

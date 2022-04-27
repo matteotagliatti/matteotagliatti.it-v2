@@ -43,6 +43,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../assets/style/style.scss";
+
 nav {
   width: fit-content;
   position: fixed;
@@ -50,9 +52,7 @@ nav {
   transform: translate(-50%, 0);
   bottom: 2rem;
   background-color: #e7e9ed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(row, center, center);
   gap: 1rem;
   padding: 1rem;
   border-radius: 0.5rem;
