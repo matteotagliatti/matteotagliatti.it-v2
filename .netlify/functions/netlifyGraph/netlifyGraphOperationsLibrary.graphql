@@ -1,0 +1,24 @@
+query GetMostPlayedTracks @netlify(id: """f7a8c011-690b-4c7b-a2cc-c392581118b5""", doc: """An example query to start with.""") {
+  me {
+    spotify {
+      topTracks(first: 12, timeRange: SHORT_TERM) {
+        edges {
+          node {
+            name
+            artists {
+              name
+            }
+            externalUrls {
+              spotify
+            }
+            album {
+              images {
+                url
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
