@@ -72,6 +72,7 @@ export default {
 
   .grid {
     @include grid(2);
+    gap: 1rem;
   }
 }
 </style>
