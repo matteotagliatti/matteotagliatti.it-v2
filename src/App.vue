@@ -117,16 +117,16 @@ export default {
           link: "https://github.com/matteotagliatti/arcade-games",
         },
         {
+          title: "matteotagliatti.it (Old)",
+          tech: "JS, JQuery, Jekyll",
+          date: "2021",
+          link: "#",
+        },
+        {
           title: "HTML Templates",
           tech: "HTML, CSS, JS",
           date: "2019/21",
           link: "https://github.com/matteotagliatti?tab=repositories&q=template&type=&language=&sort=",
-        },
-        {
-          title: "matteotagliatti.it (Old)",
-          tech: "JS, JQuery, Jekyll",
-          date: "2019",
-          link: "#",
         },
       ],
     };
