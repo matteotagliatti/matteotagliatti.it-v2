@@ -2,7 +2,7 @@
   <div class="spotify">
     <div class="container">
       <h2>Music</h2>
-      <div class="grid">
+      <div class="grid" v-if="spotify">
         <a
           v-for="(song, index) in spotify"
           :href="song.node.externalUrls.spotify"
@@ -58,6 +58,7 @@ export default {
 
   a {
     display: flex;
+    height: 80px;
 
     img {
       width: 80px;
@@ -70,7 +71,7 @@ export default {
 
     .info {
       padding: 0.5rem;
-      height: fit-content;
+      height: 100%;
 
       .author {
         font-size: 0.75rem;
@@ -98,6 +99,14 @@ export default {
 
   .grid {
     @include grid(2);
+
+    a {
+      .info {
+        h3 {
+          font-size: 0.875rem;
+        }
+      }
+    }
   }
 }
 </style>
