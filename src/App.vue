@@ -120,7 +120,7 @@ export default {
           title: "matteotagliatti.it (Old)",
           tech: "JS, JQuery, Jekyll",
           date: "2021",
-          link: "#",
+          link: "https://github.com/matteotagliatti/matteotagliatti.it-v1",
         },
         {
           title: "HTML Templates",
