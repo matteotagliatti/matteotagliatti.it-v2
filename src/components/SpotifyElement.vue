@@ -44,14 +44,15 @@ a {
     padding: 0.5rem;
     height: 100%;
 
+    h3 {
+      @include box(2);
+    }
+
     .author {
       font-size: 0.75rem;
       line-height: 1rem;
       color: $text-color;
-      display: -webkit-box;
-      -webkit-line-clamp: 1;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
+      @include box(1);
     }
   }
 }
