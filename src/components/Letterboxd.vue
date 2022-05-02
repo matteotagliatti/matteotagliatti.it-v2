@@ -62,11 +62,4 @@ p {
     border-radius: 0.3rem;
   }
 }
-
-@include mobile {
-  .movies {
-    @include grid(2);
-    grid-template-rows: repeat(4, minmax(0, 1fr));
-  }
-}
 </style>
