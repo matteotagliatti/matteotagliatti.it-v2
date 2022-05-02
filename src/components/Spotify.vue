@@ -2,18 +2,12 @@
   <div class="spotify">
     <div class="container">
       <h2>Music</h2>
-      <div class="grid" v-if="spotify">
-        <a
+      <div class="grid">
+        <SpotifyElement
           v-for="(song, index) in spotify"
-          :href="song.node.externalUrls.spotify"
+          :song="song"
           :key="index"
-        >
-          <img :src="song.node.album.images[1].url" :alt="song.node.name" />
-          <div class="info">
-            <h3>{{ song.node.name }}</h3>
-            <p class="author">{{ song.node.artists[0].name }}</p>
-          </div>
-        </a>
+        />
       </div>
     </div>
   </div>
@@ -21,9 +15,13 @@
 
 <script>
 import axios from "axios";
+import SpotifyElement from "./SpotifyElement.vue";
 
 export default {
   name: "SpotifySection",
+  components: {
+    SpotifyElement,
+  },
   data() {
     return {
       spotify: null,
@@ -55,31 +53,6 @@ export default {
   @include grid(4);
   grid-template-rows: repeat(2, minmax(0, 1fr));
   gap: 2rem;
-
-  a {
-    display: flex;
-    height: 80px;
-
-    img {
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
-      border-radius: 0.25rem;
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
-        rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-
-    .info {
-      padding: 0.5rem;
-      height: 100%;
-
-      .author {
-        font-size: 0.75rem;
-        line-height: 1rem;
-        color: $text-color;
-      }
-    }
-  }
 }
 
 @include tablet {
@@ -99,14 +72,6 @@ export default {
 
   .grid {
     @include grid(2);
-
-    a {
-      .info {
-        h3 {
-          font-size: 0.875rem;
-        }
-      }
-    }
   }
 }
 </style>
