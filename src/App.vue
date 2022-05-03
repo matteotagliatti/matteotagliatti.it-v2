@@ -8,7 +8,7 @@
           A web developer with an eye for design from Milan, Italy. Instead of
           the traditional portfolio site that never gets updated I wanted to
           make something more simple and personal as a collection of things I
-          enjoy.
+          enjoy. Clarity and simplicity are my guidelines.
         </p>
       </div>
     </header>

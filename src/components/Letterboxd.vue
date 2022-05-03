@@ -1,8 +1,8 @@
 <template>
   <div>
     <p>
-      Struggling for a film to watch? Here's the latest eight from my
-      <a href="https://letterboxd.com/mattetgl/" target="_blank">Letterboxd</a>
+      Struggling for a film to watch? Here's the latest from my
+      <a href="https://letterboxd.com/mattetgl/" target="_blank">Letterboxd</a>.
     </p>
     <div class="movies">
       <a
