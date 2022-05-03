@@ -6,4 +6,4 @@ Music is fetched via [Spotify API](https://developer.spotify.com/documentation/w
 
 ## Local Dev
 
-`netlify dev --graph`.
+`netlify dev --graph`

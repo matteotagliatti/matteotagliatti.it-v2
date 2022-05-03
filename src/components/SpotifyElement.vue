@@ -1,5 +1,5 @@
 <template>
-  <a :href="song.node.externalUrls.spotify">
+  <a :href="song.node.externalUrls.spotify" target="_blank">
     <img :src="song.node.album.images[1].url" :alt="song.node.name" />
     <div class="info">
       <h3>{{ removeParentesis }}</h3>
