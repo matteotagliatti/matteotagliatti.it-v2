@@ -30,7 +30,10 @@
           </div>
         </div>
         <div>
-          <h2><a href="#" class="link">GitHub</a> Works</h2>
+          <h2>
+            <a href="https://github.com/matteotagliatti" class="link">GitHub</a>
+            Works
+          </h2>
           <div>
             <a
               v-for="(work, index) in openWorks"

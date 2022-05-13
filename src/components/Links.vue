@@ -24,7 +24,7 @@ export default {
         {
           name: "GitHub",
           icon: require("../assets/img/github.svg"),
-          url: "https://github.com/matteotagliatti?tab=repositories",
+          url: "https://github.com/matteotagliatti",
         },
         {
           name: "LinkedIn",
