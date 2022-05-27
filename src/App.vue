@@ -31,7 +31,12 @@
         </div>
         <div>
           <h2>
-            <a href="https://github.com/matteotagliatti" class="link">GitHub</a>
+            <a
+              href="https://github.com/matteotagliatti"
+              class="link"
+              target="_blank"
+              >GitHub</a
+            >
             Works
           </h2>
           <div>
