@@ -10,6 +10,17 @@
           make something more simple and personal as a collection of things I
           enjoy. Clarity and simplicity are my guidelines.
         </p>
+        <p>
+          Technologies I use: <span class="strong">HTML</span>,
+          <span class="strong">CSS</span> (Saas, Bootstrap, Tailwind),
+          <span class="strong">JavaScript</span> (Vue.js, Node.js),
+          <span class="strong">PHP</span>
+          (Laravel),
+          <span class="strong">DB</span> (MySQL), CMS (WordPress, Shopify),
+          <span class="strong">Git</span>,
+          <span class="strong">Static Site Generators</span> (Jekyll, 11ty),
+          <span class="strong">Design</span> (Figma).
+        </p>
       </div>
     </header>
     <!-- Works -->
@@ -113,6 +124,12 @@ export default {
       ],
       openWorks: [
         {
+          title: "DeliveBoo",
+          tech: "Laravel, Vue.js",
+          date: "2022",
+          link: "https://github.com/matteotagliatti/deliveboo",
+        },
+        {
           title: "Vue.js Website Template",
           tech: "Vue.js",
           date: "2022",
@@ -129,12 +146,6 @@ export default {
           tech: "JS, JQuery, Jekyll",
           date: "2021",
           link: "https://github.com/matteotagliatti/matteotagliatti.it-v1",
-        },
-        {
-          title: "HTML Templates",
-          tech: "HTML, CSS, JS",
-          date: "2019/21",
-          link: "https://github.com/matteotagliatti?tab=repositories&q=template&type=&language=&sort=",
         },
       ],
     };
@@ -232,6 +243,10 @@ header {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
+  p:first-of-type {
+    margin-bottom: 0.5rem;
+  }
 }
 
 section {
@@ -240,6 +255,10 @@ section {
 
 .no-mw {
   max-width: unset;
+}
+
+.strong {
+  font-weight: 600;
 }
 
 .container {
