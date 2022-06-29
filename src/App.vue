@@ -132,7 +132,7 @@ export default {
         },
         {
           title: "matteotagliatti.it (Old)",
-          tech: "JS, JQuery, Jekyll",
+          tech: "JQuery, Jekyll",
           date: "2021",
           link: "https://github.com/matteotagliatti/matteotagliatti.it-v1",
         },
