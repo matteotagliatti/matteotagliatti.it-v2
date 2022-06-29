@@ -8,18 +8,7 @@
           A web developer with an eye for design from Milan, Italy. Instead of
           the traditional portfolio site that never gets updated I wanted to
           make something more simple and personal as a collection of things I
-          enjoy. Clarity and simplicity are my guidelines.
-        </p>
-        <p>
-          Technologies I use: <span class="strong">HTML</span>,
-          <span class="strong">CSS</span> (Saas, Bootstrap, Tailwind),
-          <span class="strong">JavaScript</span> (Vue.js, Node.js),
-          <span class="strong">PHP</span>
-          (Laravel),
-          <span class="strong">DB</span> (MySQL), CMS (WordPress, Shopify),
-          <span class="strong">Git</span>,
-          <span class="strong">Static Site Generators</span> (Jekyll, 11ty),
-          <span class="strong">Design</span> (Figma).
+          enjoy.
         </p>
       </div>
     </header>
