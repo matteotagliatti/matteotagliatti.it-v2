@@ -258,6 +258,12 @@ section {
       display: block;
       margin-bottom: $base-mb;
     }
+
+    div.info {
+      h3 {
+        font-weight: 450;
+      }
+    }
   }
 
   .dotted {
