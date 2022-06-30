@@ -16,32 +16,19 @@
     <section>
       <div class="container works">
         <div class="dotted">
-          <h2>Client Works</h2>
+          <h2>Tech I use</h2>
           <div>
-            <a
-              v-for="(work, index) in closedWorks"
-              :href="work.link"
-              :key="index"
-              target="_blank"
-            >
-              <h3>{{ work.title }}</h3>
-              <small>{{ work.tech }} - {{ work.date }}</small>
-            </a>
+            <div v-for="(info, index) in infos" :key="index" class="info">
+              <h3>{{ info.title }}</h3>
+              <small>{{ info.tech }}</small>
+            </div>
           </div>
         </div>
         <div>
-          <h2>
-            <a
-              href="https://github.com/matteotagliatti"
-              class="link"
-              target="_blank"
-              >GitHub</a
-            >
-            Works
-          </h2>
+          <h2>Works</h2>
           <div>
             <a
-              v-for="(work, index) in openWorks"
+              v-for="(work, index) in works"
               :href="work.link"
               :key="index"
               target="_blank"
@@ -85,12 +72,46 @@ export default {
   },
   data() {
     return {
-      closedWorks: [
+      infos: [
         {
-          title: "Centrufficio Outlet",
-          tech: "WordPress",
+          title: "HTML, CSS",
+          tech: "Bootstrap, Scss, Tailwind",
+        },
+        {
+          title: "JavaScript",
+          tech: "Vue.js, Node.js",
+        },
+        {
+          title: "PHP & DB",
+          tech: "Laravel, MySQL",
+        },
+        {
+          title: "CMS / Static Site Generators",
+          tech: "WordPress, Shopify, Jekyll, 11ty",
+        },
+        {
+          title: "Design",
+          tech: "Photoshop, Illustrator, Figma",
+        },
+      ],
+      works: [
+        {
+          title: "DeliveBoo",
+          tech: "Laravel, Vue.js",
+          date: "2022",
+          link: "https://github.com/matteotagliatti/deliveboo",
+        },
+        {
+          title: "Arcade Games",
+          tech: "JavaScript, Jekyll",
+          date: "2022",
+          link: "https://github.com/matteotagliatti/arcade-games",
+        },
+        {
+          title: "matteotagliatti.it (Old)",
+          tech: "JQuery, Jekyll",
           date: "2021",
-          link: "https://centrufficiooutlet.it/",
+          link: "https://github.com/matteotagliatti/matteotagliatti.it-v1",
         },
         {
           title: "Studio Acqua",
@@ -103,38 +124,6 @@ export default {
           tech: "WordPress",
           date: "2020",
           link: "https://centrosposiparadiso.it/",
-        },
-        {
-          title: "Magna Carta",
-          tech: "HTML, CSS, JS",
-          date: "2019",
-          link: "https://magnacartasnc.it/",
-        },
-      ],
-      openWorks: [
-        {
-          title: "DeliveBoo",
-          tech: "Laravel, Vue.js",
-          date: "2022",
-          link: "https://github.com/matteotagliatti/deliveboo",
-        },
-        {
-          title: "Vue.js Website Template",
-          tech: "Vue.js",
-          date: "2022",
-          link: "https://github.com/matteotagliatti/proj-html-vuejs",
-        },
-        {
-          title: "Arcade Games",
-          tech: "JS, Jekyll",
-          date: "2022",
-          link: "https://github.com/matteotagliatti/arcade-games",
-        },
-        {
-          title: "matteotagliatti.it (Old)",
-          tech: "JQuery, Jekyll",
-          date: "2021",
-          link: "https://github.com/matteotagliatti/matteotagliatti.it-v1",
         },
       ],
     };
@@ -264,7 +253,8 @@ section {
   & > div {
     padding: 2rem;
 
-    a {
+    a,
+    div.info {
       display: block;
       margin-bottom: $base-mb;
     }
